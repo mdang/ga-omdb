@@ -1,14 +1,21 @@
 
+<p ng-hide="movie" class="no-results">
+	Loading..
+</p>
 
-<img src="{{ movie.Poster}}" />
+<div class="left">
+	<img src="{{ movie.Poster}}" />
+</div>
 
-<h2>{{ movie.Title }}</h2>
-<p>{{ movie.Plot }}</p>
+<div class="right">
+	<h2>{{ movie.Title }}</h2>
+	<p>{{ movie.Plot }}</p>
+	<p>Director: {{ movie.Director }}</p>
+	<p>Actors: {{ movie.Actors }}</p>
+	<p>Writers: {{ movie.Writer }}</p>
 
-<p>Rated: {{ movie.Rated }}</p>
-<p>Rating: {{ movie.imdbRating }} Votes: {{ movie.imdb.Votes }}</p>
-<p>Actors: {{ movie.Actors }}</p>
-<p>Runtime: {{ movie.Runtime }}</p>
-<p>Released: {{ movie.Released }}</p>
-<p>Director: {{ movie.Director }}</p>
-<p>Writer: {{ movie.Writer }}</p>
+	<p>Rated: {{ movie.Rated }}</p>
+	<p>Rating: {{ movie.imdbRating }} Votes: {{ movie.imdb.Votes }}</p>
+	<p>Runtime: {{ movie.Runtime }}</p>
+	<p>Released: {{ movie.Released }}</p>
+</div>
