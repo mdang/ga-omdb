@@ -6,13 +6,13 @@ table {
 	margin-top: 20px;
 }
 input {
-	width: 500px;
 	margin: 1em auto;
 	padding: .5em;
 }
 h1 {
 	font-size: 190%;
 	font-weight: bold;
+	margin-bottom: 25px;
 }
 .no-results {
 	text-align: center;
