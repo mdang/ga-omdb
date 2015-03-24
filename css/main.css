@@ -1,0 +1,22 @@
+
+body {
+	margin: 1em;
+	font-size: 150%;
+}
+table {
+	width: 50%;
+}
+tr {
+	padding: 10px 0;
+}
+td {
+	padding: 10px 0;
+}
+input {
+	width: 500px;
+	margin: 1em auto;
+	padding: .5em;
+}
+h1 {
+	font-size: 190%;
+}

@@ -1,10 +1,10 @@
-angular.module('omdb', ['ngRoute'])
+angular.module('omdb', ['ngRoute', 'omdbControllers', 'omdbServices'])
  
 .config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      controller:'HomeCtrl',
-      templateUrl:'/templates/home.html'
+      controller:'ListCtrl',
+      templateUrl:'/templates/list.html'
     })
     .when('/movie/:movieId', {
       controller:'DetailCtrl',
@@ -13,8 +13,4 @@ angular.module('omdb', ['ngRoute'])
     .otherwise({
       redirectTo:'/'
     });
-})
-
-.controller('HomeCtrl', function($scope) {
-
 });

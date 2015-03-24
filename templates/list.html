@@ -1,0 +1,19 @@
+<input type="text" ng-model="search" class="search-query" id="q" placeholder="Search by movie title" />
+
+<table>
+<thead>
+<tr>
+  <th>Movie</th>
+  <th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="movie in movies | orderBy:'Title'">
+  <td><a ng-href="#/movie/{{movie.imdbID}}">{{movie.Title}}</a></td>
+  <td>{{movie.Year}}</td>
+</tr>
+<tr ng-hide="movies.length">
+	<td colspan="2">No movies found =(</td>
+</tr>
+</tbody>
+</table>
