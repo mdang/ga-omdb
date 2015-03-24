@@ -1,6 +1,7 @@
 <input type="text" ng-model="search" class="search-query" id="q" placeholder="Search by movie title" />
 
-<table>
+<div class="table-responsive">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
   <th>Movie</th>
@@ -13,7 +14,8 @@
   <td>{{movie.Year}}</td>
 </tr>
 <tr ng-hide="movies.length">
-	<td colspan="2">No movies found =(</td>
+	<td colspan="2"><p class="no-results">To begin, start typing the name of the movie you're looking for</p></td>
 </tr>
 </tbody>
 </table>
+</div>

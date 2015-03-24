@@ -1,16 +1,17 @@
 
 body {
-	margin: 1em;
+	margin: 1em 2em;
 	font-size: 150%;
 }
 table {
-	width: 50%;
+
+	margin-top: 20px;
 }
 tr {
-	padding: 10px 0;
+
 }
 td {
-	padding: 10px 0;
+
 }
 input {
 	width: 500px;
@@ -19,4 +20,10 @@ input {
 }
 h1 {
 	font-size: 190%;
+}
+
+.no-results {
+	text-align: center;
+	font-weight: bold;
+	padding: 2em;
 }
