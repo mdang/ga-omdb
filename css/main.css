@@ -1,17 +1,9 @@
-
 body {
 	margin: 1em 2em;
 	font-size: 150%;
 }
 table {
-
 	margin-top: 20px;
-}
-tr {
-
-}
-td {
-
 }
 input {
 	width: 500px;
@@ -22,13 +14,11 @@ h1 {
 	font-size: 190%;
 	font-weight: bold;
 }
-
 .no-results {
 	text-align: center;
 	font-weight: bold;
-	padding: 2em;
+	padding: 4em 2em;
 }
-
 .left {
 	width: 350px;
 	float: left;
@@ -38,4 +28,7 @@ h1 {
 }
 .right {
 	overflow: hidden;
+}
+.detail-view p span {
+	font-weight: bold;
 }
